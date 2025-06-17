@@ -1,0 +1,154 @@
+
+/* 메인 컨텐츠 */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 중앙 정렬 */
+    justify-content: center;
+    width: 100%;
+    padding-top: 100px;
+    margin-left: 200px; /* 사이드바 영역만큼 여백(선택사항) */
+}
+.main h1{
+    margin-right: 1050px;
+    padding-bottom: 50px;
+}
+
+/* 검색 폼 스타일 */
+.search-form {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 10px;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+.search-form label {
+    font-weight: bold;
+}
+
+.search-form input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-form button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background: #0056b3;
+}
+
+/* 주문 테이블 */
+.order-table {
+    width: 80vw;
+    max-width: 1200px;
+    min-width: 600px;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.order-table th,
+.order-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-table th {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.order-table tr:hover {
+    background: #f1f1f1;
+}
+
+/* 상태 컬러 강조 */
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 80px;
+}
+
+/* 주문 대기 (노랑) */
+.status.ORDER_PENDING {
+    background: #ffc107;
+    color: #fff;
+}
+
+/* 배송 중 (파랑) */
+.status.SHIPPING {
+    background: #007bff;
+    color: #fff;
+}
+
+/* 배송 완료 (초록) */
+.status.DELIVERED {
+    background: #28a745;
+    color: #fff;
+}
+
+/* 주문 취소 (빨강) */
+.status.CANCELED {
+    background: #dc3545;
+    color: #fff;
+}
+
+/* 주문 접수 (청록색) */
+.status.RECEIVED {
+    background: #17a2b8;
+    color: #fff;
+}
+
+
+/* 페이징 네비게이션 */
+.pagination-container {
+    display: flex !important;
+    justify-content: center !important;
+    width: 110% !important;
+    margin-top: 20px !important; /* 필요에 따라 여백 조절 */
+}
+
+
+.pagination-link {
+    display: inline-block !important;
+    padding: 6px 12px !important;
+    margin: 0 5px !important;
+    border: 1px solid #ccc !important;
+    text-decoration: none !important;
+    color: #333 !important;
+    border-radius: 5px !important;
+    background-color: white;
+}
+
+.pagination-link.active {
+    font-weight: bold;
+    background-color:#ddd !important;
+    color: #333 !important;
+}
+
+.pagination-link:hover{
+    background-color: #ddd !important;
+    color : #333;
+}

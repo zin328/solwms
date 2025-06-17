@@ -1,0 +1,149 @@
+.main-content .stock-all-wrapper {
+  max-width: 1200px;      
+  margin: 0 auto;
+  margin-left: 120px;
+  margin-top: 50px;        
+  padding: 20px;         
+  box-sizing: border-box;
+}
+
+
+.control-container {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-bottom: 60px !important;
+  width: 110% !important;
+  gap: 7px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.stock-all-container h2 {
+  margin-bottom: 27px; /* 원하는 간격으로 조절 */
+}
+.left-control {
+  flex: 1 !important;
+  text-align: left !important;
+}
+
+.right-control {
+  flex: 1 !important;
+  text-align: right !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 10px !important;
+}
+
+/* 입력 및 선택 요소 */
+.input-style {
+  padding: 12px !important;
+  font-size: 16px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 5px !important;
+  box-sizing: border-box !important;
+}
+
+/* 주문 수량 input만 줄이기 위한 추가 스타일 */
+.number-input {
+  width: 80px !important;      /* 원하는 너비로 조정 */
+  padding: 6px !important;     /* 패딩도 필요에 따라 조정 */
+  font-size: 14px !important;  /* 폰트 크기도 줄임 */
+}
+
+.select-style {
+  padding: 12px !important;
+  font-size: 16px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 5px !important;
+  box-sizing: border-box !important;
+}
+
+/* 버튼 스타일 */
+.button-style {
+  background-color: #333 !important;
+  color: white !important;
+  padding: 12px 20px !important;
+  border: none !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  font-size: 16px !important;
+  min-width: 150px !important;
+}
+
+.button-style:hover {
+  background-color: #bfbfbf !important;
+}
+
+/* 테이블 스타일 */
+.table-style {
+  width: 110% !important;
+  table-layout: fixed !important;
+  border-collapse: collapse !important;
+  margin-top: 10px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+  background-color: #ffffff !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+/* 헤더 셀 스타일 */
+.th-style {
+  background-color: #333 !important;
+  color: white !important;
+  padding: 8px 12px !important;  /* 상하 패딩을 줄여서 높이를 낮춤 */
+  text-align: center !important;
+  border: none !important;
+}
+
+.td-quantity {
+  cursor: default !important;
+}
+
+/* 데이터 셀 스타일 */
+.td-style {
+  padding: 6px 10px !important;  /* 상하 패딩을 줄여서 높이를 낮춤 */
+  text-align: center !important;
+  border: none !important;
+}
+
+/* 고정 열 스타일 */
+.fixed-col {
+  width: 200px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+}
+
+.pagination-container {
+  display: flex !important;
+  justify-content: center !important;
+  width: 110% !important;
+  margin-top: 20px !important; /* 필요에 따라 여백 조절 */
+}
+
+
+/* 페이징 네비게이션 */
+.pagination-link {
+  display: inline-block !important;
+  padding: 6px 12px !important;
+  margin: 0 5px !important;
+  border: 1px solid #ccc !important;
+  text-decoration: none !important;
+  color: #333 !important;
+  border-radius: 5px !important;
+  background-color: white;
+}
+
+.pagination-link.active {
+  font-weight: bold;
+  background-color:#ddd !important;
+  color: #333 !important;
+}
+
+.pagination-link:hover{
+  background-color: #ddd !important;
+  color : #333;
+}

@@ -1,0 +1,113 @@
+/* 메인 컨텐츠 영역 */
+.main-content {
+    margin-left: 70px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* 주문 상세 영역 */
+.order-detail {
+    background-color: #fff;
+    padding: 2vw;
+    border-radius: 1vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    max-width: 1200px;
+    min-width: 600px;
+}
+
+/* 테이블 스타일 */
+.order-table {
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.order-table th {
+    background-color: #333;
+    color: white;
+}
+
+.order-table th,
+.order-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-table tr:hover {
+    background: #f1f1f1;
+}
+
+/* 주문 상태 버튼 영역 */
+.order-actions {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* 모달 (Bootstrap 기본 스타일 사용) */
+.modal-dialog {
+    max-width: 400px;
+    margin: auto;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+/* 상태 컬러 강조 */
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 80px;
+}
+
+.status.ORDER_PENDING {
+    background: #ffc107;
+    color: #fff;
+}
+
+.status.SHIPPING {
+    background: #007bff;
+    color: #fff;
+}
+
+.status.DELIVERED {
+    background: #28a745;
+    color: #fff;
+}
+
+.status.CANCELED {
+    background: #dc3545;
+    color: #fff;
+}
+
+.status.RECEIVED {
+    background: #17a2b8;
+    color: #fff;
+}

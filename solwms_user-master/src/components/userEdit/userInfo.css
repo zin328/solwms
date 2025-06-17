@@ -1,0 +1,34 @@
+.user-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.user-info-table thead tr {
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+}
+
+.user-info-table th, .user-info-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.user-info-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.user-info-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.user-info-table td {
+    color: #555;
+}
+.info {
+    font-weight: bold;
+}

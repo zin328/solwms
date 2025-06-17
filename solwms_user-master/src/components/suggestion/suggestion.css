@@ -1,0 +1,520 @@
+/* 모달 스타일 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* ✅ 화면 전체 너비 */
+    height: 100vh;
+    /* ✅ 화면 전체 높이 */
+    background: hsla(0, 0%, 24%, 0.7);
+    /* ✅ 배경색 변경 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    margin-top: 620px;
+    margin-left: 1120px;
+}
+
+.modal h2 {
+    font-weight: bolder;
+    color: black;
+}
+
+.modal input {
+    background: #ddd;
+    /* ✅ 배경색 변경 */
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal textarea {
+    background: #ddd;
+    /* ✅ 배경색 변경 */
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 350px;
+}
+
+/* ✅ 버튼을 감싸는 컨테이너 */
+.button-container2 {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    /* ✅ 버튼을 수평 정렬 */
+    width: 100%;
+    /* ✅ 부모 너비 100% */
+    margin-top: 10px;
+    padding-left: 270px;
+}
+
+.modal button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    gap: 10px;
+
+}
+
+.modal button:hover {
+    background-color: #ddd;
+}
+
+.suggestion-container {
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    margin-top: 90px;
+    margin-left: 600px;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    width: 750px;
+    height: 800px;
+    min-width: 500px;
+    /* ✅ 최소 너비 유지 */
+
+
+}
+
+.suggestion-container h1 {
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    text-align: center;
+    margin-right: 17px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* 오른쪽 정렬 */
+    width: 100%;
+    gap: 0px;
+    margin-bottom: 2px;
+    padding-right: 12px;
+    padding-top: 5px;
+    border: none !important;
+    /* 아래 요소와 간격 추가 */
+}
+
+.search-btn {
+    display: inline-flex;
+    align-items: center;
+    /* 수직 중앙 정렬 */
+    gap: 3px;
+    /* input과 button 사이의 간격 */
+    margin-bottom: 5px;
+    margin-right: 0px;
+    /* 공지사항 목록과의 간격 */
+}
+
+.search-btn input {
+    margin-left: 200px;
+    width: 150px;
+    /* 검색창의 너비를 늘림 (필요에 맞게 조정) */
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.search-btn button {
+    padding: 10px 20px;
+    /* 버튼의 크기를 줄임 */
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 1px;
+}
+
+.search-btn button:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.suggestion-table {
+    width: 650px;
+    margin: 0 auto;
+    min-width: 500px;
+    /* ✅ 최소 너비 설정 */
+    max-width: 900px;
+    min-height: 50px;
+    /* 최대 너비 설정 */
+    /* ✅ 부모 요소 너비를 초과하지 않도록 제한 */
+    border-collapse: collapse;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
+    /* ✅ 테이블 크기 고정 */
+    flex-grow: 0;
+    /* 🔹 테이블 크기가 자동으로 커지지 않도록 설정 */
+    /* 테이블이 남은 공간을 채우고 줄어들도록 설정 */
+
+    /* 테이블 전체 높이 고정 */
+
+}
+
+.suggestion-table th {
+    border: 1px solid #ddd;
+    /* 셀의 가로/세로 테두리 */
+    word-break: break-word;
+    /* 긴 글자를 자동 줄바꿈 */
+    text-align: center;
+    font-weight: bold;
+    color: #ddd;
+    background-color: #333;
+
+}
+
+.suggestion-table td {
+    border: 1px solid #ddd;
+    /* 셀의 가로/세로 테두리 */
+    word-break: break-word;
+    /* 긴 글자를 자동 줄바꿈 */
+    text-align: center;
+    line-height: 1.2;
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+
+.suggestion-table th:nth-child(1),
+/* 번호 */
+.suggestion-table td:nth-child(1) {
+    width: 10%;
+    /* 번호 열 너비를 10%로 설정 */
+}
+
+.suggestion-table th:nth-child(2),
+/* 작성자 */
+.suggestion-table td:nth-child(2) {
+    width: 65%;
+    /* 작성자 열 너비를 15%로 설정 */
+}
+
+.suggestion-table th:nth-child(3),
+/* 제목 */
+.suggestion-table td:nth-child(3) {
+    width: 25%;
+    /* 제목 열 너비를 75%로 설정 */
+}
+
+
+
+.suggestion-table thead {
+    color: black;
+    position: sticky;
+    top: 0;
+    background-color: #f4f4f4;
+    z-index: 1;
+
+    text-align: center;
+    max-height: 150px;
+    /* 최소 높이 설정 */
+}
+
+.suggestion-table tbody {
+    color: black;
+    position: sticky;
+    max-height: 150px;
+    height: (100% - 50px);
+    width: 100%;
+    text-align: center;
+
+}
+
+.suggestion-title {
+    text-decoration: none;
+    /* 밑줄 제거 */
+    color: black;
+    /* 기본 색상 */
+    font-weight: bold;
+}
+
+.suggestion-title:hover {
+    color: #ddd;
+}
+
+.pagination button:hover {
+    background-color: #333;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    /* 중앙 정렬 */
+    align-items: center;
+    /* 수직 정렬 */
+    gap: 10px;
+    /* 버튼과 텍스트 사이 간격 */
+    width: 100%;
+    /* 부모 요소의 너비를 100%로 설정하여 변동 방지 */
+}
+
+.pagination span {
+    color: black;
+    align-self: center;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+
+.add-sugg-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 40px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 검색 버튼과 간격 조절 */
+
+}
+
+.suggestion-detail-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    /* ✅ 테두 강제 적용 */
+    background-color: #f9f9f9;
+    width: 650px;
+    height: 800px;
+    max-height: 800px;
+    /* 최대 너비 설정 (필요에 따라 조정 가능) */
+
+    margin-left: 600px;
+
+}
+
+.content-header {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.suggestion-detail-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    height: 280px;
+    overflow-y: auto;
+    /* 수직 스크롤 활성화 */
+    word-break: break-word;
+    /* ✅ 긴 단어 자동 줄바꿈 */
+    white-space: normal;
+    /* ✅ 공백 유지 및 자동 줄바꿈 */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-detail-content p {
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+
+/* 제목 수정 input 스타일 */
+.edit-title {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background: #ddd;
+    /* ✅ 배경색 변경 */
+}
+
+/* 내용 수정 textarea 스타일 */
+.edit-content {
+    width: 100%;
+    height: 500px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background: #ddd;
+    /* ✅ 배경색 변경 */
+}
+
+.button-container {
+
+    margin-right: 80px;
+    padding-left: 300px;
+    /* ✅ 버튼들을 오른쪽 정렬 */
+    align-items: center;
+    /* ✅ 버튼을 수직 중앙 정렬 */
+    gap: 2px;
+    /* ✅ 버튼 사이 간격 */
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.back-btn {
+    margin: 0px;
+}
+
+.button-container button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+}
+
+.button-container button:hover {
+    background-color: #bfbfbf;
+    color: white;
+}
+
+.comment-continer h6 {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+/* 댓글 입력 섹션 스타일 */
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* ✅ 왼쪽 정렬 */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.comment-section textarea {
+    width: 100%;
+    /* ✅ 부모 요소에 맞게 꽉 차게 */
+    height: 80px;
+    /* ✅ 기본 높이 설정 */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    margin-top: qpx;
+    /* ✅ 사용자가 세로 크기 조절 가능 */
+}
+
+.comment-section button {
+    align-self: flex-end;
+    /* ✅ 버튼을 오른쪽으로 정렬 */
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.comment-section button:hover {
+    background-color: #bfbfbf;
+    color: white;
+}
+
+/* 댓글 목록 스타일 */
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* 개별 댓글 아이템 */
+.comment-item {
+    position: relative;
+    /* ✅ 내부 요소 위치 조정 가능 */
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* 댓글 내용 */
+.comment-item p {
+    font-size: 16px;
+    color: black;
+    word-break: break-word;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* 삭제 버튼을 댓글 오른쪽 아래 정렬 */
+.comment-item button {
+    color: white;
+    background-color: #333;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+
+
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.comment-item button:hover {
+    background-color: #bfbfbf !important;
+    color: white !important;
+}

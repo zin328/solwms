@@ -1,0 +1,137 @@
+/* detail.css */
+
+/* 전체 컨테이너 */
+.detail-container {
+    width: 1000px;
+    margin: 30px auto;
+    margin-left:70px ;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+/* 제목 */
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 섹션 */
+.section {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start; /* 세로 정렬을 맞추기 위해 추가 */
+    justify-content: flex-start; /* 좌측 정렬 */
+}
+
+/* 상품 정보 */
+.product-info {
+    display: flex;
+    flex-direction: row;
+    gap: 30px; /* 설명과 이미지 사이의 간격 */
+    align-items: flex-start; /* 텍스트와 이미지 수직 정렬 */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* 상품명 및 세부 사항 */
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.product-detail {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.product-category {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+/* 이미지 스타일 */
+.image-container {
+    flex: 0 0 350px; /* 이미지 크기 고정 */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* 이미지 크기 제한 */
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* 테이블 스타일 */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.th {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.td:first-child {
+    border-left: 2px solid #ddd;
+}
+/*입고출고*/
+/* return.css */
+
+.in-state {
+    background-color: #28a745; /* 초록색 (입고) */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .out-state {
+    background-color: #dc3545; /* 빨간색 (출고) */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  

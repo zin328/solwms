@@ -1,0 +1,173 @@
+/* 전체 컨테이너 */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    /* 공지사항/건의사항과 재고현황을 가로 정렬 */
+    justify-content: center;
+    /* 화면 중앙 정렬 */
+    align-items: flex-start;
+    /* 위쪽 정렬 */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 80%;
+    max-width: 1200px;
+    min-width: 300px;
+    height: 760px;
+    max-width: 1200px;
+    /* 최대 너비 설정 */
+    margin-top: 40px;
+    margin-left: 350px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    gap: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notice-container {
+    display: flex;
+    flex-direction: column;
+    height: 740px;
+    /* ✅ 공지사항과 건의사항을 균등 배치 */
+
+    /* ✅ 재고현황과 높이 동일하게 맞추기 */
+
+    /* ✅ 재고현황과 균형 맞추기 */
+}
+
+
+
+/* 공지사항, 건의사항 */
+.notice,
+.notice2 {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    /* ✅ 높이 자동 조정 */
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* ✅ 내용 중앙 정렬 */
+}
+
+
+/* 공지사항 & 건의사항 스타일 */
+.notice h2,
+.notice2 h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid #ddd;
+}
+
+.notice h2:hover,
+.notice2 h2:hover {
+    color: #ddd !important;
+}
+
+.notice ul,
+.notice2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notice li,
+.notice2 li {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bolder;
+    transition: background-color 0.3s ease;
+}
+
+.notice li:hover,
+.notice2 li:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+/* 재고현황 섹션 스타일 */
+.inventory {
+    width: 600px;
+    height: 720px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inventory h2 {
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    flex-shrink: 0;
+    /* ✅ 크기가 줄어들지 않도록 고정 */
+    border-bottom: 2px solid #ddd;
+
+}
+
+/* progress-bar 스타일 */
+.progress-bar2 {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 10px;
+    height: 600px;
+    /* ✅ 재고 목록이 최대한 공간을 차지하도록 설정 */
+    padding-right: 10px;
+
+}
+
+/* progress-item 스타일 */
+.progress-item {
+    display: flex;
+    justify-content: flex-start;
+    /* ✅ 제품명과 바를 한 줄로 정렬 */
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 13px;
+}
+
+.bar2 {
+    height: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    min-width: 30px;
+    /* ✅ 최소 너비 설정 */
+
+    /* ✅ 제품명과의 간격을 조절 */
+    flex-shrink: 0;
+    /* ✅ 크기가 줄어들지 않도록 고정 */
+    padding-top: 9px;
+
+}
+
+.progress-name {
+    color: #007bff;
+    width: 160px;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    flex-grow: 0;
+    /* ✅ 왼쪽으로 정렬 */
+    word-wrap: break-word;
+    white-space: normal;
+    font-weight: bold;
+}
+
+.progress-name:hover {
+    color: #ddd !important;
+
+}
